@@ -25,7 +25,7 @@ class Settings extends Model
     const REMEMBER_ALWAYS = 'always';
     const REMEMBER_NEVER = 'never';
     const REMEMBER_ASK = 'ask';
-    const MIN_PASSWORD_LENGTH_DEFAULT = 8;
+    const MIN_PASSWORD_LENGTH_DEFAULT = 4;
 
     public function initSettingsData()
     {
