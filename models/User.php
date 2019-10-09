@@ -22,7 +22,7 @@ class User extends UserBase
      */
     public $rules = [
         'email'    => 'required|between:6,255|email|unique:users',
-        'avatar'   => 'nullable|image|max:4000',
+        'avatar'   => 'nullable|image|max:12000',
         'username' => 'required|between:2,255|unique:users',
         'password' => 'required:create|between:' . UserSettings::MIN_PASSWORD_LENGTH_DEFAULT . ',255|confirmed',
         'password_confirmation' => 'required_with:password|between:' . UserSettings::MIN_PASSWORD_LENGTH_DEFAULT . ',255',
